@@ -14,8 +14,8 @@ serviceAccount:
   create: true
   name: s3-mounter
 
-bucketName: my-bucket
-iamRoleARN: my-role
+bucketName: eksbuckets3
+iamRoleARN: arn:aws:iam::363436838884:policy/kubernetes-s3-access
 mountPath: /var/s3
 hostPath: /mnt/s3data
 
